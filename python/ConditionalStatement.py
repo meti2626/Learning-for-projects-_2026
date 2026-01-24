@@ -113,15 +113,41 @@ fruits = ['banana' , 'avocado' ,'apple']
 #        print("Are you sure you want a plain pizza?")
 
 
+# available_toppings = ['mushrooms', 'olives', 'green peppers', 'pepperoni', 'pineapple', 'extra cheese']
 
-available_toppings = ['mushrooms', 'olives', 'green peppers', 'pepperoni', 'pineapple', 'extra cheese']
+# requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
 
-requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+# for requested_topping in requested_toppings:
+#    if requested_topping in available_toppings:
+#       print(f"Adding {requested_topping}.")
+#    else:
+#      print(f"Sorry, we don't have {requested_topping}.")
 
-for requested_topping in requested_toppings:
-   if requested_topping in available_toppings:
-      print(f"Adding {requested_topping}.")
-   else:
-     print(f"Sorry, we don't have {requested_topping}.")
+# print("\nFinished making your pizza")     
 
-print("\nFinished making your pizza")     
+
+#5-8.Hello Admin:
+
+usernames = ['butterfly', 'bookies','6ftchad','caragreeneyes','admin']
+
+for username in usernames :
+  if username == 'admin':
+    print(" Hello admin,would yo like to see a status report?")
+  else:
+    print(f" Hello {username}, thank you for logging in again.")  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
