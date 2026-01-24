@@ -53,18 +53,84 @@
 #use dic to store the same things about dfferent people
 
 
-# favorite_languages = {
-# 'en': 'python',
-# 'sarah': 'c',
-# 'edward': 'ruby',
-# 'phil': 'python',
-# }
+
 
 # print(favorite_languages['sarah'].title())
 
 
-alien_0 = {'color': 'green', 'speed': 5}
+# alien_0 = {'color': 'green', 'speed': 5}
 
-point_value = alien_0.get('points', 'No point value assigned.')
+# point_value = alien_0.get('points', 'No point value assigned.')
 
-print(alien_0['points'])  # This will raise a KeyError
+#print(alien_0['points'])  # This will raise a KeyError 
+
+favorite_languages = {
+'en': 'python',
+'sarah': 'c',
+'edward': 'ruby',
+'phil': 'python',
+}
+
+# for name , language in favorite_languages.items():
+#  print(f"{name.title()} favorite language is {language.title()}.")
+
+
+# friends = ['phil' , 'sarah']
+# for name in favorite_languages.keys():
+#     print(name.title())
+
+#     if name in friends:
+#       print( f"{name.title()}  , I see your favorite language is {favorite_languages[name].title()}!")
+
+
+
+# if 'erin' not in favorite_languages.keys():
+#     print("Erin , please take our poll!")
+
+
+
+# for name in sorted(favorite_languages.keys()):
+#    print(name.title())
+
+
+# for language in set(favorite_languages.values()):
+#     print(language.title())
+
+
+# A list of Dictionary
+
+# alien_0 = {'color': 'green', 'points': 5}
+# alien_1 = {'color': 'yellow', 'points': 10}
+# alien_2 = {'color': 'red', 'points': 15}
+
+
+# aliens = [alien_0, alien_1, alien_2]
+
+# for alien in aliens:
+#     print(alien)
+
+
+
+aliens = []
+
+for alien_number in range(30):
+   new_alien =  {'color': 'green', 'points': 5, 'speed': 'slow'}
+   second_new_alien =  {'color': 'yellow', 'points': 10, 'speed': 'medium'}
+   aliens.append(new_alien)
+   aliens.append(second_new_alien)
+print (f"Total aliens: {aliens}")
+
+for aliens in aliens:
+    print(aliens)
+for alien in aliens[0:3]:
+   if alien['color'] == 'green':
+       alien['color'] = 'yellow'
+       alien['speed'] = 'medium'
+       alien['points'] = 10
+   elif alien['color'] == 'yellow':
+        alien['color'] = 'red'
+        alien['speed'] = 'fast'
+        alien['points'] = 15
+# for alien in aliens[:5]:
+#    print(alien)
+# print("...")  
