@@ -111,26 +111,83 @@ favorite_languages = {
 
 
 
-aliens = []
+###-----------List of many dictionaries ------------###
 
-for alien_number in range(30):
-   new_alien =  {'color': 'green', 'points': 5, 'speed': 'slow'}
-   second_new_alien =  {'color': 'yellow', 'points': 10, 'speed': 'medium'}
-   aliens.append(new_alien)
-   aliens.append(second_new_alien)
-print (f"Total aliens: {aliens}")
 
-for aliens in aliens:
-    print(aliens)
-for alien in aliens[0:3]:
-   if alien['color'] == 'green':
-       alien['color'] = 'yellow'
-       alien['speed'] = 'medium'
-       alien['points'] = 10
-   elif alien['color'] == 'yellow':
-        alien['color'] = 'red'
-        alien['speed'] = 'fast'
-        alien['points'] = 15
+# aliens = []
+
+# for alien_number in range(30):
+#    new_alien =  {'color': 'green', 'points': 5, 'speed': 'slow'}
+#    second_new_alien =  {'color': 'yellow', 'points': 10, 'speed': 'medium'}
+#    aliens.append(new_alien)
+#    aliens.append(second_new_alien)
+# print (f"Total aliens: {aliens}")
+
+# for aliens in aliens:
+#     print(aliens)
+# for alien in aliens[0:3]:
+#    if alien['color'] == 'green':
+#        alien['color'] = 'yellow'
+#        alien['speed'] = 'medium'
+#        alien['points'] = 10
+#    elif alien['color'] == 'yellow':
+#         alien['color'] = 'red'
+#         alien['speed'] = 'fast'
+#         alien['points'] = 15
 # for alien in aliens[:5]:
 #    print(alien)
 # print("...")  
+
+
+
+
+# -- AList in dictionay---#
+#  when values are a list 
+
+
+
+
+
+
+
+pizza = {
+   'crust' : 'thick',
+   'topping':['mushrooms', 'extra cheese']
+   
+}
+
+
+print(f"You ordered a {pizza['crust']} crust pizza with the following toppings:" )
+
+for topping in pizza['topping']:
+    print(f"- {topping}")
+
+
+
+favorite_languages = {
+'en': ['python', 'ruby'],
+'sarah': ['c' , 'java'],
+'edward': ['ruby' , 'go'],
+'phil': ['python' , 'haskell'],
+}
+
+for name , languages in favorite_languages.items():
+    print(f"\n{name.title()}'s favorite languages are:")
+    for language in languages:
+        print(f"- {language.title()}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
