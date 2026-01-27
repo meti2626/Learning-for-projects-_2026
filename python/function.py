@@ -115,10 +115,7 @@
 
 #---PASSING AN ARBITRARY NUMBER OF ARGUMENTS----#
 
-
-
-
-def make_pizza(*toppings,size):
+def make_pizza(size,*toppings):
    print(f"\nMaking a {size}-inch pizza with the following toppings:") 
    for topping in toppings:
     print(f"-{topping}")
@@ -126,3 +123,18 @@ def make_pizza(*toppings,size):
 
 make_pizza('pepperoni','margatita', 12 )
 make_pizza(16, 'mushrooms','green peppers','extra cheese')
+
+
+
+
+
+def build_profile(first,last,**user_info):
+   
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+
+    return user_info
+
+
+user_profile = build_profile('albert','einstein',location='princeton',field='physics')
+print(user_profile)
