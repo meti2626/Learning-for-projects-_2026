@@ -79,3 +79,17 @@ my_used_car.read_odometer()
 my_used_car.increment_odometer(100)
 my_used_car.read_odometer()
 
+
+
+class ElectricCar(Car):
+
+
+   def __init__(self, make, model, year):
+      super().__init__(make, model, year)
+
+my_tesla = ElectricCar('tesla' , 'model' , 2019)
+print(my_tesla.get_descriptive_name())
+print(my_tesla.update_odometer(34))
+print(my_tesla.increment_odometer(100))
+
+
