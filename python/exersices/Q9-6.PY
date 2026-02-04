@@ -50,15 +50,41 @@ class User:
 first_user = User ("kate" ,"John")
 second_user = User("andrew" , "colvet")
 
-print(first_user.login_attempts)
-first_user.reset_login_attempts()
-first_user.increment_login_attempts()
-first_user.increment_login_attempts()
+# print(first_user.login_attempts)
+# first_user.reset_login_attempts()
+# first_user.increment_login_attempts()
+# first_user.increment_login_attempts()
 
-print(first_user.login_attempts)
+# print(first_user.login_attempts)
 # first_user.describe_user()
 # first_user.greet_user()
 # second_user.describe_user()
 # second_user.greet_user()
 
 
+class  IceCreamStand(Restaurant) :
+
+  def __init__(self, restaurant_name, cuisine_type, *flavors):
+       super().__init__(restaurant_name, cuisine_type)
+       self.flavor =  flavors
+
+  def  showFlavors(self):
+    print( self.flavor)
+       
+
+Icecreamstand = IceCreamStand("chickflea" , "chicken", "chocolate" , "vanilla" , "sprinkles") 
+
+#Icecreamstand.showFlavors()
+
+
+
+class Admin(User):
+     def __init__(self, FN, LN):
+          super().__init__(FN, LN)
+          self.privilage = ["can add post", "can delete post", "can ban user"]
+
+     def  show_privileges(self):
+         print(self.privilage)
+Admin1 =  Admin("keith" ,"alehandro" )         
+
+Admin1.show_privileges()
