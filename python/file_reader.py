@@ -1,5 +1,13 @@
-with open ('pi_digit.txt') as file_object:
-  contents = file_object.read()
-print(contents)  
+with open('python\pi_digits.txt') as file_object:
+    contents = file_object.read()
+print(contents)
 
 
+
+# import os
+
+# here = os.path.dirname(__file__)
+# file_path = os.path.join(here, 'pi_digits.txt')
+# with open(file_path) as file_object:
+#     contents = file_object.read()
+# print(contents)
