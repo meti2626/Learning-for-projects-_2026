@@ -24,14 +24,29 @@
 
 
 
-filename = 'python\pi_digits.txt'
+# filename = 'python\pi_digits.txt'
 
-with open (filename) as file_object:
-   lines = file_object.readlines()
+# with open (filename) as file_object:
+#    lines = file_object.readlines()
 
-pi_string = ''
-for line in lines :
-   pi_string +=line.strip() 
+# pi_string = ''
+# for line in lines :
+#    pi_string +=line.strip() 
 
-print(pi_string)
-print(len(pi_string))     
+# print(pi_string)
+# print(len(pi_string))     
+
+
+
+
+import math
+
+birthday = input("Enter your birthday, in the form mmddyy: ")
+
+pi_str = str(math.pi).replace("." ,"")
+
+if birthday in pi_str:
+   print("Your birthday is in pi")
+
+else:   
+     print("Your birthday was NOT found in these digits of π.")
