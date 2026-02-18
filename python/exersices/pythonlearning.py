@@ -10,5 +10,8 @@ with open(filename) as file_object:
   lines = file_object.readlines()
 
 for line in lines:
-   print(line.rstrip())  
+   print(line.replace('python' , 'C').rstrip())  
+
+message = "I really like your dog"
+print(message.replace('dog' , 'cat'))
 
