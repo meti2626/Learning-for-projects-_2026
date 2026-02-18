@@ -1,0 +1,3 @@
+python can read a file 
+python can use class and object
+python can build AI 
