@@ -37,8 +37,6 @@
 # print(len(pi_string))     
 
 
-
-
 import math
 
 birthday = input("Enter your birthday, in the form mmddyy: ")
