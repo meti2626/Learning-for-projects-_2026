@@ -76,7 +76,7 @@ favorite_languages = {
 
 
 # friends = ['phil' , 'sarah']
-# for name in favorite_languages.keys():
+# for name in.keys():
 #     print(name.title())
 
 #     if name in friends:
