@@ -1,6 +1,6 @@
 import sys
 import pygame 
-
+  
 from setting import Settings
 
 class AlienInvasion:
@@ -9,8 +9,6 @@ class AlienInvasion:
         pygame.init()
 
         self.setting = Settings()
-
-
 
         self.screen = pygame.display.set_mode((self.setting.screen_width, self.setting.screen_height))
         pygame.display.set_caption("Alien Invasion")
